@@ -1,0 +1,3 @@
+[% WRAPPER main_wrapper title="Edit namespace" %]
+
+[% END %]

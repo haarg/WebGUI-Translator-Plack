@@ -1,0 +1,15 @@
+[% WRAPPER main_wrapper title="Edit " _ data.label %]
+<form action="[% r.uri_for("language/" _ language) %]">
+<label>Label <input type="text" name="label" value="[% data.label %]" /></label><br />
+<label>Abbreviation <input type="text" name="abbrev" value="[% data.languageAbbreviation %]" /></label><br />
+<label>Locale <input type="text" name="locale" value="[% data.locale %]" /></label><br />
+<label>Toolbar <input type="text" name="toolbar" value="[% data.toolbar %]" /></label><br />
+<input type="submit" name="update" value="save" />
+</form>
+
+<ul>
+[% FOR namespaces %]
+<li><a href="[% r.uri_for("language/" _ language _ "/" _ namespace) %]">[% namespace %]</a> - [% completion %]%</li>
+[% END %]
+</ul>
+[% END %]

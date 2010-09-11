@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[% title %]</title>
+    <link type="text/css" href="[% r.uri_for("main.css") %]" />
+</head>
+<body>
+[% content %]
+</body>
+</html>
